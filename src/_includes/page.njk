@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+
+<div class="lg:grid lg:grid-cols-2 lg:gap-16 mx-auto min-w-[75%] flex flex-col w-full bg-cover
+    bg-[url('/assets/img/bg-image.png')] bg-no-repeat">
+  <div class="col-span-2 flex flex-row items-center lg:px-24  px-6 py-6 w-full justify-between ">
+    <a href="/" class="lg:flex lg:flex-shrink-0 ">
+      <img class="lg:max-w-full max-w-[150px] p-2" src="/assets/img/logo.png" alt=""/>
+    </a>
+    <div class="lg:ps-60 ps-48 ">
+      {% include "nav.njk" %}
+    </div>
+  </div>
+</div>
+<main class="container mx-auto p-10 lg:p-auto mt-12">
+  <header>
+    <h1 class="text-3xl">{{ title }}</h1>
+  </header>
+  <article class="mt-8 font-sans">
+    {{ content | safe }}
+  </article>
+</main>

@@ -1,0 +1,109 @@
+{% set currentUrl %}{{ page.url }}{% endset %}
+{# <nav>
+  <div class="block ">
+    <button class="flex items-center px-3 py-2 rounded text-white" id="mobile-menu-button">
+      <svg class="fill-current h-6 w-6" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <title>Menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="w-full block lg:flex lg:items-center lg:w-auto">
+    <div class="lg:h-auto menu-items-container flex transition-all lg:translate-x-0 transform items-start mt-12 lg:mt-0 lg:flex
+        flex-col space-y-12 lg:flex-row lg:items-center justify-between lg:space-y-0 lg:space-x-12 text-white font-medium
+        -translate-x-[500px] h-0">
+      <ul class="flex flex-row text-sm lg:text-md gap-10 uppercase relative text-white font-roboto">
+        <li>
+          <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Despre</a>
+        </li>
+        <li>
+          <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">produse</a>
+        </li>
+        <li>
+          <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Facilitati</a>
+        </li>
+        <li>
+          <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Locatie</a>
+        </li>
+        <li>
+          <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> #}
+<ul class="flex-row text-md lg:text-md gap-10 uppercase relative text-white hidden lg:flex lg:items-center lg:justify-center">
+  <li class="relative">
+    <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/" class="relative group">
+      <span class="after-hover">Acasa</span>
+      <span class="absolute inset-x-0 bottom-0 pt-10 bg-white w-0 transition-all transform origin-left"></span>
+    </a>
+  </li>
+  <li class="relative">
+    <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/despre" class="relative group">
+      <span class="after-hover">Despre</span>
+      <span class="absolute inset-x-0 bottom-0 pt-10 bg-white w-0 transition-all transform origin-left"></span>
+    </a>
+  </li>
+  <li class="relative">
+    <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/produse" class="relative group">
+      <span class="after-hover">Produse</span>
+      <span class="absolute inset-x-0 bottom-0 pt-10 bg-white w-0 transition-all transform origin-left"></span>
+    </a>
+  </li>
+  <li class="relative">
+    <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/" class="relative group">
+      <span class="after-hover">Facilități</span>
+      <span class="absolute inset-x-0 bottom-0 pt-10 bg-white w-0 transition-all transform origin-left"></span>
+    </a>
+  </li>
+  <li class="relative">
+    <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/" class="relative group">
+      <span class="after-hover">Testimoniale</span>
+      <span class="absolute inset-x-0 bottom-0 pt-10 bg-white w-0 transition-all transform origin-left"></span>
+    </a>
+  </li>
+  <li class="border border-white p-3 hover:bg-white hover:text-black">
+    <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/contact">Contact</a>
+  </li>
+</ul>
+<label class="relative z-40 cursor-pointer px-3 py-6 lg:hidden" for="mobile-menu">
+  <input class="peer hidden" type="checkbox" id="mobile-menu"/>
+  <div class="relative z-50 block h-[1px] w-7 bg-white bg-transparent content-[''] before:absolute before:top-[-0.35rem]
+    before:z-50 before:block before:h-full before:w-full before:bg-white before:transition-all before:duration-200
+    before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full
+    after:w-full after:bg-white after:transition-all after:duration-200 after:ease-out after:content-['']
+    peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45
+    before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45
+    after:peer-checked:transform "></div>
+  <div class="fixed inset-0 z-40 hidden h-full w-full bg-white/50 backdrop-blur-sm peer-checked:block ">
+    &nbsp;
+  </div>
+  <div class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500
+      peer-checked:translate-x-0 ">
+    <div class="float-right min-h-full w-[85%] bg-[#1e1e1e] text-white px-6 pt-12 shadow-2xl ">
+      <menu class="mobile-menu">
+        <ul class="text-sm lg:text-md gap-12 flex-col uppercase relative  z-50 flex items-center pt-24">
+          <li class="menu-item">
+            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Acasa</a>
+          </li>
+          <li class="menu-item">
+            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/despre">Despre</a>
+          </li>
+          <li class="menu-item">
+            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/produse">Produse</a>
+          </li>
+          <li class="menu-item">
+            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Facilități</a>
+          </li>
+          <li class="menu-item">
+            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Testimoniale</a>
+          </li>
+          <li class="menu-item">
+            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/contact">Contact</a>
+          </li>
+        </ul>
+      </menu>
+    </div>
+  </div>
+</label>

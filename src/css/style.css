@@ -1,0 +1,92 @@
+/* Very Smol Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Supporting Content */
+
+code:not([class*="language"]) {
+  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  font-size: 1.75ex;
+  color: #444;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-right: 0.15em;
+  padding-left: 0.15em;
+}
+
+blockquote {
+  margin: 2rem 0;
+  padding: 0.5em 1rem;
+  border-left: 3px solid rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto-Regular.woff2") format("woff2"), url("/assets/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('/assets/fonts/Oswald-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Oswald-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  font-family: "Oswald";
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+.custom-drop-shadow {
+ filter: drop-shadow(1px 1px 16px rgba(255, 189, 62, 0.30));
+}
+.btn-drop-shadow:hover{
+  filter: drop-shadow(1px 1px 16px rgba(255, 189, 62, 0.30));
+}  .card {
+  transition: transform 0.3s;
+
+  &:hover {
+      background-color: #131212;
+      transform: scale(1.1);
+
+      .title {
+          color: white;
+      }
+
+      img {
+          filter: invert(100%) grayscale(100%) contrast(200%);
+      }
+
+      .bb {
+          transition: opacity 0.3s;
+
+          .inner-bb {
+              opacity: 0;
+          }
+      }
+  }
+
+  .title {
+      color: black;
+  }
+
+  img {
+      transition: filter 0.3s;
+  }
+}
