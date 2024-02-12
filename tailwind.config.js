@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["Roboto", "serif"],
+        serif: ["DM Serif Display", "serif"],
+        sans: ["Poppins", "serif"],
+        poppins: ["Poppins", "sans-serif"],
+        dm: ["DM Serif Display", "serif"],
       },
     },
   },

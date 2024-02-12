@@ -29,7 +29,7 @@ $mail->setFrom($from);
 $mail->addAddress($to1); 
 $mail->addAddress($to2); 
 
-$mail->Subject = '  siteName: "GlowebStarter",
+$mail->Subject = '  siteName: "Eden Crevedia",
 - Trimitere noua din formularul de contact';
 $body = "<h1>Solicitare noua din formularul de contact</h1><p><strong>Email: </strong>{$_POST['email']}</p>";
 $mail->msgHTML($body);

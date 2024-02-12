@@ -5,17 +5,17 @@ category: privacy
 
 <h2 class="text-2xl font-bold mb-4">Politica de Confidentialitate</h2>
 <p class="mb-4">
-  GlowebStarter , persoana juridica romana, cu sediul in Arges,	Sat Bascov, Str. Mierlusesti 13 C, inregistrata la Registrul Comertului sub nr. J03/559/1998 , cod unic de inregistrare 11050357, va transmitem aceasta Nota de informare pentru a va explica modul in care prelucram si protejam datele cu caracter personal.
+  Eden Crevedia , persoana juridica romana, cu sediul in Arges,	Sat Bascov, Str. Mierlusesti 13 C, inregistrata la Registrul Comertului sub nr. J03/559/1998 , cod unic de inregistrare 11050357, va transmitem aceasta Nota de informare pentru a va explica modul in care prelucram si protejam datele cu caracter personal.
 </p>
 <p class="mb-4">
-    Prin prezenta te informam ca ne-am actualizat politicile pentru a integra in acestea si in activitatea curenta a GlowebStarter Romania cele mai recente modificari propuse de Regulamentul (UE) 2016/679 privind protectia persoanelor fizice in ceea ce priveste prelucrarea datelor cu caracter personal si privind libera circulatie a acestor date. Inainte de a continua navigarea pe Website-ul nostru te rugam sa aloci timpul necesar pentru a citi si intelege continutul Politicii de Confidentialitate.
+    Prin prezenta te informam ca ne-am actualizat politicile pentru a integra in acestea si in activitatea curenta a Eden Crevedia Romania cele mai recente modificari propuse de Regulamentul (UE) 2016/679 privind protectia persoanelor fizice in ceea ce priveste prelucrarea datelor cu caracter personal si privind libera circulatie a acestor date. Inainte de a continua navigarea pe Website-ul nostru te rugam sa aloci timpul necesar pentru a citi si intelege continutul Politicii de Confidentialitate.
 </p>
 <h2 class="text-2xl font-bold mb-4">CE PRELUCRARE FACE OBIECTUL PREZENTEI NOTE DE INFORMARE?</h2>
 <p class="mb-4">
     Aceasta Nota de informare se aplica prelucrarii datelor cu caracter personal ale:
 </p>
 <p class="mb-4">
-    Vizitatorilor si utilizatorilor site-urilor noastre care pot fi accesate la adresa <a href="www.GlowebStarter.ro" class="text-blue-500">www.GlowebStarter.ro</a>
+    Vizitatorilor si utilizatorilor site-urilor noastre care pot fi accesate la adresa <a href="www.Eden Crevedia.ro" class="text-blue-500">www.Eden Crevedia.ro</a>
 </p>
 <h2 class="text-2xl font-bold mb-4">CE INFORMATII COLECTAM DESPRE DUMNEAVOASTRA</h2>
 <p class="mb-4">

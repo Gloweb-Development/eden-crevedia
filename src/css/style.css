@@ -22,28 +22,10 @@ blockquote {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0 0.25rem 0.25rem 0;
 }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/assets/fonts/Roboto-Regular.woff2") format("woff2"), url("/assets/fonts/Roboto-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Oswald';
-  src: url('/assets/fonts/Oswald-Regular.woff2') format('woff2'),
-      url('/assets/fonts/Oswald-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-
 body {
   font-family: "Oswald";
 }
+
 body {
   min-height: 100vh;
   display: flex;
@@ -53,40 +35,25 @@ body {
 footer {
   margin-top: auto;
 }
-.custom-drop-shadow {
- filter: drop-shadow(1px 1px 16px rgba(255, 189, 62, 0.30));
+
+/* Heading sizes */
+
+h1 {
+  font-size: 4rem;
 }
-.btn-drop-shadow:hover{
-  filter: drop-shadow(1px 1px 16px rgba(255, 189, 62, 0.30));
-}  .card {
-  transition: transform 0.3s;
+h2 {
+  font-size: 2rem;
+}
 
-  &:hover {
-      background-color: #131212;
-      transform: scale(1.1);
+/* Custom code  */
 
-      .title {
-          color: white;
-      }
+.custom-drop-shadow {
+  filter: drop-shadow(1px 1px 16px rgba(255, 189, 62, 0.3));
+}
+.btn-drop-shadow:hover {
+  filter: drop-shadow(1px 1px 16px rgba(255, 189, 62, 0.3));
+}
 
-      img {
-          filter: invert(100%) grayscale(100%) contrast(200%);
-      }
-
-      .bb {
-          transition: opacity 0.3s;
-
-          .inner-bb {
-              opacity: 0;
-          }
-      }
-  }
-
-  .title {
-      color: black;
-  }
-
-  img {
-      transition: filter 0.3s;
-  }
+.header {
+  background-image: url("/assets/img/header_bg.jpeg");
 }
