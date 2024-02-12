@@ -1,70 +1,54 @@
 <!-- Footer Start -->
 <footer class="bg-[#1e1e1e]">
-    <div class="lg:grid lg:grid-cols-4 lg:ps-20 grid gap-10 p-10 bg-[#1e1e1e]">
-        <div class="gap-4 flex flex-col">
-            <a href="/" class="lg:flex lg:flex-shrink-0 hidden">
-                <img class="w-50 h-50" src="/assets/img/logo.png" alt=""/>
-            </a>
-        </div>
-        <div class="col-span-1 flex flex-col gap-4 text-white">
-            <h3 class="text-md uppercase">Utile</h3>
-            <div class="flex gap-5">
-                <a href="#" class="text-sm text-white font-sans"></a>
-            </div>
-            <div class="flex gap-5">
-                <a href="#" class="text-sm text-white font-sans"></a>
-            </div>
-            <div class="flex gap-5">
-                <a href="#" class="text-sm text-white font-sans"></a>
-            </div>
-            <div class="flex gap-5">
-                <a href="#" class="text-sm text-white font-sans"></a>
-            </div>
-        </div>
-        <div class="flex flex-col gap-4 text-white">
-            <h3 class="text-md uppercase">Contact</h3>
-            <div class="flex gap-5">
-                <img src="/assets/icons/Phone.png" alt="" class=""/>
-                <a href="tel:+40755056910" class="text-md font-sans">+(40)755 999 9999</a>
-            </div>
-            <div class="flex gap-5">
-                <img src="/assets/icons/Envelope.png" alt="" class=""/>
-                <a href="mailto:sales@new-point.ro" class="text-md font-sans">something@something.com</a>
-            </div>
-        </div>
-        <div class="col-span-1">
-            <h3 class="text-md text-white uppercase ">Social</h3>
-            <div class="social-links flex gap-5">
-                <div class="fb  flex w-8 h-8 justify-center items-center">
-                    <a href="https://www.facebook.com/"><img src="/assets/icons/facebook.png" alt="" class=""/>
+    <div class="container mx-auto">
+        <div class="grid grid-cols-3">
+            <div class="col-span-1 pt-10 ">
+                <div class="gap-4 flex flex-col">
+                    <a href="/" class="lg:flex lg:flex-shrink-0 hidden">
+                        <img class="w-50 h-50" src="/assets/img/logo.png" alt=""/>
                     </a>
+                    <div class="flex items-center gap-5">
+                        <img class="h-[30px]" src="/assets/img/Pin.png" alt=""/>
+                        <span class="text-white text-md">Crevedia, Sat Cocani vis-à-vis de Academia Titi Aur</span>
+                    </div>
                 </div>
-                <div class="insta flex w-8 h-8  justify-center items-center">
-                    <a href="#"><img src="/assets/icons/instagram.png" alt="" class="https://www.instagram.com/"/>
+                <div class="flex flex-col gap-4 my-10 text-white">
+                    <h3 class="text-2xl font-serif ">Contact</h3>
+                    <div class="flex gap-5">
+                        <img src="/assets/icons/Phone.png" alt="" class=""/>
+                        <a href="tel:+40731616312" class="text-md font-sans">+(40)731 616 312</a>
+                    </div>
+                    <div class="flex gap-5">
+                        <img src="/assets/icons/Envelope.png" alt="" class=""/>
+                        <a href="mailto:traian.stancu@gmail.com" class="text-md font-sans">traian.stancu@gmail.com</a>
+                    </div>
+                </div>
+                <div class="pb-20">
+                    <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO" class="">
+                        <img src="/assets/img/SOL.png" alt=""/>
+                    </a>
+                    <a href="https://anpc.ro/ce-este-sal/" class="">
+                        <img src="/assets/img/SAL.png" alt=""/>
                     </a>
                 </div>
             </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-1">
+                {% include "contact.njk" %}
+            </div>
         </div>
-    </div>
-    <div class="col-span-1 lg:flex lg:flex-row gap-2  flex flex-col items-center justify-center bg-[#1e1e1e]">
-        <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO" class="">
-            <img src="/assets/img/SOL.png" alt=""/>
-        </a>
-        <a href="https://anpc.ro/ce-este-sal/" class="">
-            <img src="/assets/img/SAL.png" alt=""/>
-        </a>
-    </div>
-    <hr class="w-full h-[0.05rem] mt-5 bg-white border-0">
-    <div class="lg:flex lg:flex-row gap-2 lg:justify-between flex flex-col justify-center items-center lg:px-20 pt-5 bg-[#1e1e1e]">
-        <a href="#" class="text-sm font-sans text-white">
-            <span>&#169;</span>
-            All Rights Reserved.</a>
-        <div class="lg:flex grid gap-3 text-center items-center justify-center ">
-            <a href="/termene-si-conditii" class="text-sm text-white font-sans">Termeni & Conditii</a>
-            <div class="lg:h-3 lg:border-l-2 lg:border-white"></div>
-            <a href="/politica-de-confidentialitate" class="text-sm text-white font-sans">Poltica de confidentialitate</a>
-            <div class="lg:h-3 lg:border-l-2 lg:border-white"></div>
-            <a href="/politica-cookies" class="text-sm text-white font-sans">Poltica cookies</a>
+        <hr class="w-full h-[0.05rem] mt-5 bg-white border-0 ">
+        <div class="container mx-auto flex items-center justify-between py-5 bg-[#1e1e1e]">
+            <a href="#" class="text-sm font-sans text-white">
+                <span>&#169; Eden Forest Crevedia.</span>
+                All Rights Reserved.</a>
+            <div class="lg:flex grid gap-3 text-center items-center justify-center ">
+                <a href="/termene-si-conditii" class="text-sm text-white font-sans">Termeni & Conditii</a>
+                <div class="lg:h-3 lg:border-l-2 lg:border-white"></div>
+                <a href="/politica-de-confidentialitate" class="text-sm text-white font-sans">Poltica de confidentialitate</a>
+                <div class="lg:h-3 lg:border-l-2 lg:border-white"></div>
+                <a href="/politica-cookies" class="text-sm text-white font-sans">Poltica cookies</a>
+            </div>
         </div>
     </div>
 </footer>

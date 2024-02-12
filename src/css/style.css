@@ -1,4 +1,8 @@
 /* Very Smol Reset */
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,11 +26,10 @@ blockquote {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0 0.25rem 0.25rem 0;
 }
-body {
-  font-family: "Oswald";
-}
+
 
 body {
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,9 +54,49 @@ h2 {
   filter: drop-shadow(1px 1px 16px rgba(255, 189, 62, 0.3));
 }
 .btn-drop-shadow:hover {
-  filter: drop-shadow(1px 1px 16px rgba(255, 189, 62, 0.3));
+  filter: drop-shadow(1px 1px 16px rgba(255, 255, 255, 0.3));
 }
 
 .header {
   background-image: url("/assets/img/header_bg.jpeg");
+}
+.glass{
+  background: rgba( 253, 253, 253, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(183, 183, 189, 0.082);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.map {
+  background-image: url("/assets/img/harta.png");
+}        .-z-1 {
+  z-index: -1;
+}
+.origin-0 {
+  transform-origin: 0;
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label,
+textarea:focus ~ label,
+textarea:not(:placeholder-shown) ~ label,
+select:focus ~ label,
+select:not([value='']):valid ~ label {
+  /* @apply transform; scale-75; -translate-y-6; */
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-scale-x: 0.75;
+  --tw-scale-y: 0.75;
+  --tw-translate-y: -1.5rem;
+}
+input:focus ~ label,
+select:focus ~ label {
+  /* @apply text-black; left-0; */
+  --tw-text-opacity: 1;
+  color: #ffffff;
+  left: 0;
 }

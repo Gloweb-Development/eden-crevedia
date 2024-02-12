@@ -1,55 +1,62 @@
 <section
-    id="contact">
+  id="contact">
   <!--Contact start-->
-  <div class="flex flex-col pt-20  items-center p-10 bg-[#1E1E1E]">
-    <h3 class="text-5xl uppercase font-semibold leading-[4.5rem] text-white">Contact</h3>
-    <p class="lg:text-md  text-md text-center font-sans text-white">Pentru informații suplimentare, vă rugăm să luați
-            legătura cu consultanții noștri.</p>
-    <div class="col-span-1 flex flex-col justify-center items-center">
-      <form class="flex flex-col gap-5 max-w-[500px] pt-10 rounded-sm" action="form_handler.php" method="post">
-        <input
-                    type="nume"
-                    id="nume"
-                    name="nume"
-                    class="bg-gray-50 border font-sans border-gray-300 text-gray-900 text-sm focus:gray-700 focus:border-gray-500 block
-                        p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-black"
-                    placeholder="Nume si prenume*"
-                    required/>
-        <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="bg-gray-50 border font-sans border-gray-300 text-gray-900 text-sm focus:gray-700 focus:border-gray-500 block
-                        p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-black"
-                    placeholder="E-mail*"
-                    required/>
-        <input
-                    type="telefon"
-                    id="telefon"
-                    name="telefon"
-                    class="bg-gray-50 border font-sans border-gray-300 text-gray-900 text-sm focus:gray-700 focus:border-gray-500 block
-                        p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-black"
-                    placeholder="Telefon*"
-                    required/>
-        <textarea
-                    id="message"
-                    name="message"
-                    class="bg-gray-50 border font-sans border-gray-300 text-gray-900 text-sm focus:gray-700 focus:border-gray-500 block
-                        p-2.5 resize-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                        dark:focus:border-black"
-                    placeholder="Mesaj*"
-                    required></textarea>
-        <div class="flex gap-5 items-start">
-          <input class="mt-0.5" type="checkbox" name="tc2" id="tc2">
-          <label class="text-xs font-medium font-sans text-white" for="tc2">Am citit termeni si conditii, politica de protectia
-                        a datelor si sunt de acord cu prelucrarea datelor cu caracter personal.</label>
-        </div><input
-                    type="submit"
-                    value="Trimite Solicitare"
-                    class="py-3 px-3 hover:apply-shadow flex justify-center  btn-drop-shadow bg-[#FFBD3E] uppercase font-semibold"/>
+  <div class=" pt-10 py-10 bg-[#1E1E1E]">
+    <h3 class="text-3xl text-start font-serif leading-[4.5rem] text-white">Cere ofertă</h3>
+    <p class="lg:text-md  text-md text-start font-sans text-white">Pentru informații suplimentare, vă rugăm<br/> să luați legătura cu consultanții noștri.</p>
+    <form class="flex flex-col gap-5 rounded-sm" action="form_handler.php" method="post">
+      <div class=" py-12 border-0 shadow-lg sm:rounded-3xl">
+        <form id="form" novalidate>
+          <div class="relative z-0 w-full mb-5">
+            <input
+              type="text"
+              name="name"
+              placeholder=" "
+              required
+              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none
+                focus:ring-0 focus:border-white border-gray-200"/>
+            <label for="name" class="absolute duration-300 top-3 -z-1 origin-0 text-white">Nume și prenume*</label>
+            <span class="text-sm text-red-600 hidden" id="error">Numele este obligatoriu</span>
+          </div>
+          <div class="relative z-0 w-full mb-5">
+            <input
+              type="email"
+              name="email"
+              placeholder=" "
+              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none
+                focus:ring-0 focus:border-white border-gray-200"/>
+            <label for="email" class="absolute duration-300 top-3 -z-1 origin-0 text-white">E-mail*</label>
+            <span class="text-sm text-red-600 hidden" id="error">E-mailul este obligatoriu</span>
+          </div>
+          <div class="relative z-0 w-full mb-5">
+            <input
+              type="text"
+              name="phone"
+              placeholder=" "
+              required
+              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none
+                focus:ring-0 focus:border-white border-gray-200"/>
+            <label for="name" class="absolute duration-300 top-3 -z-1 origin-0  text-white">Telefon*</label>
+            <span class="text-sm text-red-600 hidden" id="error">Numărul de telefon este obligatoriu</span>
+          </div>
+          <div class="relative z-0 w-full mb-5">
+            <textarea
+              type="message"
+              name="message"
+              placeholder=" "
+              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none
+                focus:ring-0 focus:border-white border-gray-200"></textarea>
+            <label for="name" class="absolute duration-300 top-3 -z-1 origin-0  text-white">Mesaj</label>
+          </div>
+          <button
+            id="button"
+            type="button"
+            class="py-3 px-3 btn-drop-shadow flex justify-center w-full mt-10 text-[#212A26] rounded-3xl bg-white uppercase
+              font-semibold">
+            Cere ofertă
+          </button>
+        </form>
       </div>
-    </form>
+    </div>
   </div>
-</div>
-<!--Contact end-->
-</section>
+</div><!--Contact end--></section>
