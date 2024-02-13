@@ -62,15 +62,23 @@ h2 {
 }
 .glass{
   background: rgba( 253, 253, 253, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba(183, 183, 189, 0.082);
+
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+.glass-drop-shadow:hover {
+  filter: drop-shadow(0 8px 32px 0 rgba(183, 183, 189, 0.082));
+  box-shadow: 0 8px 32px 0 rgba(183, 183, 189, 0.082);
+}
 .map {
   background-image: url("/assets/img/harta.png");
-}        .-z-1 {
+}
+.map-mobile {
+  background-image: url("/assets/img/harta-mobile.png");
+}   
+.-z-1 {
   z-index: -1;
 }
 .origin-0 {
