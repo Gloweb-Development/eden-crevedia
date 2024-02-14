@@ -979,6 +979,10 @@ video {
   background-image: url('/assets/img/harta-mobile.png');
 }
 
+.bg-\[url\(\'\/assets\/img\/header_mobile\.png\'\)\] {
+  background-image: url('/assets/img/header_mobile.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1512,6 +1516,14 @@ video {
     background-image: url('/assets/img/harta.png');
   }
 
+  .lg\:bg-\[url\(\'\/assets\/img\/header\.png\'\)\] {
+    background-image: url('/assets/img/header.png');
+  }
+
+  .lg\:bg-\[url\(\'\/assets\/img\/header_bg\.jpeg\'\)\] {
+    background-image: url('/assets/img/header_bg.jpeg');
+  }
+
   .lg\:p-10 {
     padding: 2.5rem;
   }
@@ -1529,11 +1541,6 @@ video {
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .lg\:pb-20 {

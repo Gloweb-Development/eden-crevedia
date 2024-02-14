@@ -60,6 +60,9 @@ h2 {
 .header {
   background-image: url("/assets/img/header_bg.jpeg");
 }
+.header-mobile {
+  background-image: url("/assets/img/header-mobile.png");
+}
 .glass{
   background: rgba( 253, 253, 253, 0.25 );
 
