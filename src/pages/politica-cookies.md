@@ -1,8 +1,9 @@
 ---
-title: Politica de Confidentialitate
+title: Politica Cookies
 category: privacy
 ---
 
+<h2 class="text-2xl font-bold mb-4">Politica Cookies</h2>
 <p class="mb-4">
   Eden Crevedia va transmitem aceasta Nota de informare pentru a va explica modul in care prelucram si protejam datele cu caracter personal.
 </p>
@@ -14,7 +15,7 @@ category: privacy
     Aceasta Nota de informare se aplica prelucrarii datelor cu caracter personal ale:
 </p>
 <p class="mb-4">
-    Vizitatorilor si utilizatorilor site-urilor noastre care pot fi accesate la adresa <a href="www.edenforest.ro" class="text-blue-500">www.edenforest.ro</a>
+    Vizitatorilor si utilizatorilor site-urilor noastre care pot fi accesate la adresa <a href="https://www.edenforest.ro/" class="text-blue-500">www.edenforest.ro</a>
 </p>
 <h2 class="text-2xl font-bold mb-4">CE INFORMATII COLECTAM DESPRE DUMNEAVOASTRA</h2>
 <p class="mb-4">

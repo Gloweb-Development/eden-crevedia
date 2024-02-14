@@ -30,3 +30,15 @@ function toggleError() {
     el.classList.toggle("text-red-600");
   });
 }
+window.addEventListener("scroll", function () {
+  const header = document.getElementById("header");
+  const scrollPos = window.scrollY;
+
+  if (scrollPos > 0) {
+    header.classList.remove("bg-transparent");
+    header.classList.add("bg-white");
+  } else {
+    header.classList.remove("bg-white");
+    header.classList.add("bg-transparent");
+  }
+});
