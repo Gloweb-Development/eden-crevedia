@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.getElementById("button").addEventListener("click", toggleError);
+// document.getElementById("button").addEventListener("click", toggleError);
 const errMessages = document.querySelectorAll("#error");
 
 function toggleError() {

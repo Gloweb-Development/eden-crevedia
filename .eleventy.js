@@ -8,17 +8,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/css/");
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-  // eleventyConfig.addCollection("utilaje", function (collection) {
-  //   const products = require("./_data/utilaje");
-
-  //   return products.map((product) => {
-  //     const slug = `utilaje/${product.name}/`;
-  //     return Object.assign({}, product, {
-  //       slug: slug,
-  //       url: slug,
-  //     });
-  //   });
-  // });
 
   //Filters
   eleventyConfig.addFilter("pageCategoryFilter", function (collection, category, isExclude) {
@@ -29,7 +18,12 @@ module.exports = function (eleventyConfig) {
     return filtered;
   });
 
+  eleventyConfig.addFilter("clearTrailingSlash", (input) => {
+    return input.replace(/\/+$/, "");
+  });
+
   return {
+    pathPrefix: "/edencrevedia",
     dir: {
       input: "src",
       output: "_site",

@@ -1,6 +1,6 @@
 ---
 title: Termeni si conditii
-category: privacys
+category: privacy
 layout: page.njk
 ---
 

@@ -1,61 +1,64 @@
-<section
-  id="contact">
+<section id="contact">
   <!--Contact start-->
   <div class=" lg:pt-10 lg:py-10 bg-[#161616]">
     <h3 class="text-3xl text-start font-serif leading-[4.5rem] text-white">Cere ofertă</h3>
     <p class="lg:text-md  text-md text-start font-sans text-white">Pentru informații suplimentare, vă rugăm să luați
-      legătura cu consultanții noștri.</p>
-    <form class="flex flex-col gap-5 rounded-sm" action="form_handler.php" method="post">
+      legătura cu consultanții noștri.
+      </p>
+    <form class="flex flex-col gap-5 rounded-sm" action="https://usebasin.com/f/142c34a90c72" method="POST">
       <div class=" py-12 ">
         <div class="relative z-0 w-full mb-5">
           <input
-            type="text"
-            name="name"
-            placeholder=" "
-            required
-            class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none
-              focus:ring-0 focus:border-white border-gray-200"/>
-          <label for="name" class="absolute duration-300 top-3 -z-1 origin-0 text-white">Nume și prenume*</label>
-          <span class="text-sm text-red-600 hidden" id="error">Numele este obligatoriu</span>
-        </div>
-        <div class="relative z-0 w-full mb-5">
-          <input
-            type="email"
-            name="email"
-            placeholder=" "
-            class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none
-              focus:ring-0 focus:border-white border-gray-200"/>
-          <label for="email" class="absolute duration-300 top-3 -z-1 origin-0 text-white">E-mail*</label>
-          <span class="text-sm text-red-600 hidden" id="error">E-mailul este obligatoriu</span>
-        </div>
-        <div class="relative z-0 w-full mb-5">
-          <input
-            type="text"
-            name="phone"
-            placeholder=" "
-            required
-            class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none
-              focus:ring-0 focus:border-white border-gray-200"/>
-          <label for="name" class="absolute duration-300 top-3 -z-1 origin-0  text-white">Telefon*</label>
-          <span class="text-sm text-red-600 hidden" id="error">Numărul de telefon este obligatoriu</span>
-        </div>
-        <div class="relative z-0 w-full mb-5">
-          <textarea
-            type="message"
-            name="message"
-            placeholder=" "
-            class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none
-              focus:ring-0 focus:border-white border-gray-200"></textarea>
-          <label for="name" class="absolute duration-300 top-3 -z-1 origin-0  text-white">Mesaj</label>
-        </div>
-        <button
-          id="button"
-          type="button"
-          class="py-3 px-3 btn-drop-shadow flex justify-center w-full mt-10 text-[#212A26] rounded-3xl bg-white uppercase
-            font-semibold">
-          Cere ofertă
-        </button>
+              type="text"
+              name="name"
+              placeholder=" "
+              required
+              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-white border-gray-200"
+            />
+            <label for="name" class="absolute duration-300 top-3 -z-1 origin-0 text-white">Nume și prenume*</label>
+        <span class="text-sm text-red-600 hidden" id="error">Numele este obligatoriu</span>
       </div>
-    </form>
+      <div class="relative z-0 w-full mb-5">
+        <input
+              type="email"
+              name="email"
+              required
+              placeholder=" "
+              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none
+                focus:ring-0 focus:border-white border-gray-200"/>
+            <label for="email" class="absolute duration-300 top-3 -z-1 origin-0 text-white">E-mail*</label>
+      <span class="text-sm text-red-600 hidden" id="error">E-mailul este obligatoriu</span>
+    </div>
+    <div class="relative z-0 w-full mb-5">
+      <input
+              type="tel"
+              name="phone"
+              placeholder=" "
+              required
+              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none
+                focus:ring-0 focus:border-white border-gray-200"/>
+            <label for="name" class="absolute duration-300 top-3 -z-1 origin-0  text-white">Telefon*</label>
+    <span class="text-sm text-red-600 hidden" id="error">Numărul de telefon este obligatoriu</span>
   </div>
-</div><!--Contact end--></section>
+  <div class="relative z-0 w-full mb-5">
+    <textarea
+              type="message"
+              name="message"
+              placeholder=" "
+              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent text-white border-0 border-b-2 appearance-none focus:outline-none
+                focus:ring-0 focus:border-white border-gray-200"></textarea>
+    <label for="name" class="absolute duration-300 top-3 -z-1 origin-0  text-white">Mesaj</label>
+  </div>
+  <input
+            id="button"
+            name="submit"
+            type="submit"
+            class="py-3 px-3 btn-drop-shadow flex justify-center w-full mt-10 text-[#212A26] rounded-3xl bg-white uppercase font-semibold"
+              value="Cere ofertă"/>
+
+</div>
+</form>
+</div>
+</div>
+<!--Contact end-->
+</section>

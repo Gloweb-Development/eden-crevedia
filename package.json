@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm-run-all -p dev:*",
     "build": "rm -rf _site && run-s build:*",
-    "dev:11ty": "eleventy --serve",
+    "dev:11ty": "eleventy --serve --pathprefix=edencrevedia",
     "dev:css": "tailwindcss -i src/css/tailwind.css -o src/css/tailwind_dist.css --watch --postcss",
     "build:11ty": "eleventy",
     "build:css": "tailwindcss -i src/css/tailwind.css -o _site/css/tailwind_dist.css --postcss"

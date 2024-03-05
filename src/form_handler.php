@@ -16,7 +16,7 @@ $mail->SMTPDebug = 0; //2 = off (for production use) - 1 = client messages - 2 =
 if(!$host || !$user || !$pass || !$from || !$to1){
     echo('missing parameters');
 }
-$mail->Host = $host; //TODO: Remove
+$mail->Host = $host; 
 
 $mail->Port = 587;
 $mail->SMTPSecure = 'tls';
@@ -27,10 +27,9 @@ $mail->Username = $user;
 $mail->Password = $pass;
 $mail->setFrom($from);
 $mail->addAddress($to1); 
-$mail->addAddress($to2); 
+// $mail->addAddress($to2); 
 
-$mail->Subject = '  siteName: "Eden Crevedia",
-- Trimitere noua din formularul de contact';
+$mail->Subject = '  Eden Crevedia - Trimitere noua din formularul de contact';
 $body = "<h1>Solicitare noua din formularul de contact</h1><p><strong>Email: </strong>{$_POST['email']}</p>";
 $mail->msgHTML($body);
 $mail->AltBody = 'HTML messaging not supported';
@@ -39,5 +38,5 @@ $mail->AltBody = 'HTML messaging not supported';
 if ($mail->send()) {
     header('Location: /thankyou');
 } else {
-    header('Location: /error');
+    // header('Location: /error');
 }
