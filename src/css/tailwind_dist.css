@@ -958,20 +958,24 @@ video {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-\[url\(\'\/edencrevedia\/assets\/img\/harta-mobile\.png\'\)\] {
-  background-image: url('/edencrevedia/assets/img/harta-mobile.png');
+.bg-\[url\(\'\/assets\/img\/harta-mobile\.png\'\)\] {
+  background-image: url('/assets/img/harta-mobile.png');
 }
 
-.bg-\[url\(\'\/edencrevedia\/assets\/img\/header_bg\.jpeg\'\)\] {
-  background-image: url('/edencrevedia/assets/img/header_bg.jpeg');
+.bg-\[url\(\'\/assets\/img\/header_bg\.jpeg\'\)\] {
+  background-image: url('/assets/img/header_bg.jpeg');
 }
 
-.bg-\[url\(\'\/edencrevedia\/assets\/img\/header_mobile\.png\'\)\] {
-  background-image: url('/edencrevedia/assets/img/header_mobile.png');
+.bg-\[url\(\'\/assets\/img\/header_mobile\.png\'\)\] {
+  background-image: url('/assets/img/header_mobile.png');
 }
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -1470,12 +1474,12 @@ video {
     gap: 4rem;
   }
 
-  .lg\:bg-\[url\(\'\/edencrevedia\/assets\/img\/harta\.png\'\)\] {
-    background-image: url('/edencrevedia/assets/img/harta.png');
+  .lg\:bg-\[url\(\'\/assets\/img\/harta\.png\'\)\] {
+    background-image: url('/assets/img/harta.png');
   }
 
-  .lg\:bg-\[url\(\'\/edencrevedia\/assets\/img\/header_bg\.jpeg\'\)\] {
-    background-image: url('/edencrevedia/assets/img/header_bg.jpeg');
+  .lg\:bg-\[url\(\'\/assets\/img\/header_bg\.jpeg\'\)\] {
+    background-image: url('/assets/img/header_bg.jpeg');
   }
 
   .lg\:p-10 {
